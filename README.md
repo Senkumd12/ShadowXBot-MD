@@ -1,5 +1,5 @@
 <p align="center">
- <img width="180px" src="https://i.ibb.co/Qn1W6cP/image.png" align="center"/>
+ <img width="180px" src="[https://i.ibb.co/Qn1W6cP/image.png](https://ibb.co/ZfyHKsG)" align="center"/>
  <h2 align="center">ShadowXBot-MD</h2>
  <p align="center">روبوت شات تلقائي لواتساب مبني على Node.js، بيتيحلك تعمل حاجات كتير وتخصص البوت زي ما تحب.</p>
 </p>
@@ -26,8 +26,6 @@
 </p>
 
 <p align="center">
-  <a href="https://api.whatsapp.com/send?phone=+5219992843881&text=&text=.menu">جرب البوت</a>
-  ·
   <a href="https://github.com/ESLAMee2288/ShadowXBot-MD/issues/new?assignees=&labels=Bug">ابلغ عن مشكلة</a>
   ·
   <a href="https://github.com/ESLAMee2288/ShadowXBot-MD/issues/new?assignees=&labels=Enhancement">اقترح ميزة جديدة</a>
