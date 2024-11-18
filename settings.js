@@ -31,17 +31,17 @@ global.prems = []
 //cambiar a true si el bot detecta sus propios comandos.
 global.isBaileysFail = false
 global.libreria = 'Baileys'
-global.baileys = 'V 6.7.8'
+global.baileys = 'V 6.7.9'
 global.vs = '1.0.1'
-global.languaje = 'العربية'
+global.languaje = 'ar'
 global.nameqr = 'Shadow X Bot - MD'
-global.namebot = 'Shadow X - MD'
+global.namebot = '𝓢𝓱𝓪𝓭𝓸𝔀 𝓧-MD'
 global.sessions = 'Shadow_X_Session'
 global.jadi = 'Shadow_X_Bot'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.packname = 'Aƙαɾι Bσƚ - MD'
+global.packname = '𝓢𝓱𝓪𝓭𝓸𝔀 𝓧 - MD'
 global.botname = '𝓢𝓱𝓪𝓭𝓸𝔀 𝓧 - MD 🌸'
 global.wm = '𝓢𝓱𝓪𝓭𝓸𝔀 𝓧-MD 🌸'
 global.author = 'By Eslam Elshnawy'
