@@ -1,11 +1,13 @@
-<p align="center">
- <img width="180px" src="https://i.ibb.co/rQnbMPF/img6.jpg" align="center"/>
- <div align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=1000&center=true&vCenter=true&width=435&lines=%C2%A7h%C3%A5%C3%90%C3%B0w%C3%97%C3%9F%C3%B0%E2%80%A0-M%C3%90" alt="Typing SVG" /></a> 
+<h2 align="center">Shadow X Bot - MD ✨️💎</h2>
+
+<div align="center">
+<img width="180px" src="https://i.ibb.co/rQnbMPF/img6.jpg"/>
 </div>
 
+<div align="center">
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=600&color=87CEEB&center=true&vCenter=true&width=435&lines=%C2%A7h%C3%A5%C3%90%C3%B0w%C3%97%C3%9F%C3%B0%E2%80%A0-M%C3%90;%E2%84%99%F0%9D%95%A0%F0%9D%95%A8%F0%9D%95%96%F0%9D%95%A3%F0%9D%95%96%F0%9D%95%95+%F0%9D%94%B9%F0%9D%95%AA+%E1%8E%B2%E1%8E%BE%E1%8F%95+%E1%8E%BF%E1%8E%AC%E1%8E%AF%E1%8E%B7" alt="Typing SVG" /></a>
+</div>
 <p align="center">روبوت شات تلقائي لواتساب مبني على Node.js، بيتيحلك تعمل حاجات كتير وتخصص البوت زي ما تحب.</p>
-</p>
 
 <p align="center">
   <a href="https://github.com/ESLAMee2288/ShadowXBot-MD/graphs/contributors">
@@ -33,6 +35,19 @@
   ·
   <a href="https://github.com/ESLAMee2288/ShadowXBot-MD/issues/new?assignees=&labels=Enhancement">اقترح ميزة جديدة</a>
 </p>
+
+---
+# هام جدا :
+
+> المشروع ده **مش مرتبط بأي شكل** بـ `واتساب`، و`واتساب` هي علامة تجارية مسجلة لشركة `WhatsApp LLC`، والبوت ده **تطوير مستقل** و**مفيش بينه وبين الشركة أي علاقة رسمية**.
+
+> **مش مضمون** إن المشروع ده **يستمر شغال 100% بسبب** ظروف وقتية خاصة بـ EslaM Elshnawy، علشان كده **المشروع بقي في يد المساهمين** والمستخدمين اللي حابين يساهموا بتحديثات.
+
+---
+
+<div align="center">
+
+### ☁️ منصة 
 
 ## شكر وتقدير
 
