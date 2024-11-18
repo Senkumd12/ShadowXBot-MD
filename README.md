@@ -1,6 +1,9 @@
+<div align="center">
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=1000&center=true&vCenter=true&width=435&lines=%C2%A7h%C3%A5%C3%90%C3%B0w%C3%97%C3%9F%C3%B0%E2%80%A0-M%C3%90" alt="Typing SVG" /></a> 
+</div>
 <p align="center">
  <img width="180px" src="https://i.ibb.co/rQnbMPF/img6.jpg" align="center"/>
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=1000&center=true&vCenter=true&width=435&lines=%C2%A7h%C3%A5%C3%90%C3%B0w%C3%97%C3%9F%C3%B0%E2%80%A0-M%C3%90" alt="Typing SVG" /></a> <p align="center">روبوت شات تلقائي لواتساب مبني على Node.js، بيتيحلك تعمل حاجات كتير وتخصص البوت زي ما تحب.</p>
+<p align="center">روبوت شات تلقائي لواتساب مبني على Node.js، بيتيحلك تعمل حاجات كتير وتخصص البوت زي ما تحب.</p>
 </p>
 
 <p align="center">
