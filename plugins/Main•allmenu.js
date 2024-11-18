@@ -4,50 +4,49 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 
 let tags = {
-  'main': 'MENÚ - INFO',
-  'buscador': 'MENÚ - BUSQUEDAS',
-  'fun': 'MENÚ - JUEGOS',
-  'gacha': 'MENÚ - GACHA',
-  'serbot': 'MENÚ - SUB BOTS',
-  'rpg': 'MENÚ - RPG',
-  'rg': 'MENÚ - REGISTRO',
-  'xp': 'MENÚ - EXP',
-  'sticker': 'MENÚ - STICKERS',
-  'anime': 'MENÚ - ANIMES',
-  'database': 'MENÚ - DATABASE',
-  'fix': 'MENÚ - FIXMSGESPERA',
-  'grupo': 'MENÚ - GRUPOS',
-  'nable': 'MENÚ - ON/OFF', 
-  'descargas': 'MENÚ - DESCARGAS',
-  'tools': 'MENÚ - HERRAMIENTAS',
-  'info': 'MENÚ - INFORMACIÓN',
-  'nsfw': 'MENÚ - NSFW', 
-  'owner': 'MENÚ - OWNER', 
-  'audio': 'MENÚ - AUDIOS', 
-  'ai': 'MENÚ - AI',
-  'transformador': 'MENÚ - CONVERTIDORES',
+  'main': 'القائمة - المعلومات',
+  'buscador': 'القائمة - البحث',
+  'fun': 'القائمة - الألعاب',
+  'gacha': 'القائمة - جاكا',
+  'serbot': 'القائمة - بوتات فرعية',
+  'rpg': 'القائمة - آر بي جي',
+  'rg': 'القائمة - التسجيل',
+  'xp': 'القائمة - الخبرات',
+  'sticker': 'القائمة - الملصقات',
+  'anime': 'القائمة - الأنمي',
+  'database': 'القائمة - قاعدة البيانات',
+  'fix': 'القائمة - إصلاح الرسائل المنتظرة',
+  'grupo': 'القائمة - المجموعات',
+  'nable': 'القائمة - تشغيل/إيقاف',
+  'descargas': 'القائمة - التنزيلات',
+  'tools': 'القائمة - الأدوات',
+  'info': 'القائمة - المعلومات',
+  'owner': 'القائمة - المالك',
+  'audio': 'القائمة - الصوتيات',
+  'ai': 'القائمة - الذكاء الاصطناعي',
+  'transformador': 'القائمة - المحولات',
 }
 
 const defaultMenu = {
-  before: `Mҽɳυ ԃҽ Aƙαɾι 🌸
+  before: `قائمة شادو 🌸
 
-*ੈ✩‧₊˚ Info usuario ⋆.ೃ࿔*:･
+*✩‧₊˚ معلومات المستخدم ⋆.ೃ࿔*:･
 
-🌸 Cliente » \`\`\`%name\`\`\`
-✨ Exp » \`\`\`%exp\`\`\`
-💴 Yenes » \`\`\`%yenes\`\`\`
-🛡 Nivel » \`\`\`%level\`\`\`
-💫 Rango » \`\`\`%role\`\`\`
+🌸 العميل » \`\`\`%name\`\`\`
+✨ الخبرة » \`\`\`%exp\`\`\`
+💴 الين » \`\`\`%yenes\`\`\`
+🛡 المستوى » \`\`\`%level\`\`\`
+💫 الرتبة » \`\`\`%role\`\`\`
 
-*ੈ✩‧₊˚ Iɳϝσ ԃҽ ʅα Ⴆσƚ ⋆.ೃ࿔*:･
+*✩‧₊˚ معلومات البوت ⋆.ೃ࿔*:･
 
-🌸 Made by » \`\`\`@ianalejandrook15x\`\`\`
-🌸 Bot » \`\`\`%botofc\`\`\`
-🌸 Fecha » \`\`\`%fecha\`\`\`
-🌸 Actividad » \`\`\`%muptime\`\`\`
-🌸 Usuarios » \`\`\`%totalreg\`\`\`
+🌸 من صنع » \`\`\`@Shadow X Team\`\`\`
+🌸 البوت » \`\`\`%botofc\`\`\`
+🌸 التاريخ » \`\`\`%fecha\`\`\`
+🌸 النشاط » \`\`\`%muptime\`\`\`
+🌸 المستخدمين » \`\`\`%totalreg\`\`\`
 
-\t*L I S T A  -  D E  -  C O M A N D O S* 
+\t*قائمة الأوامر* 
 `.trimStart(),
     header: '「 %category 」\n',
   body: 'ღ %cmd',
@@ -161,7 +160,7 @@ const gif = await response.buffer()
 
 const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 
-const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://qu.ax/TcfhE.jpg')
+const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://i.ibb.co/rQnbMPF/img6.jpg')
 
 //await conn.reply(m.chat, '*Próximamente se remitirá el menú.*', fkontak, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: packname, body: dev, sourceUrl: redeshost, thumbnail: await (await fetch(pp)).buffer() }}})
 
@@ -174,14 +173,14 @@ await conn.sendMessage(m.chat, { video: { url: vid }, caption: text.trim(), cont
 
   } catch (e) {
     await m.react(error)
-    conn.reply(m.chat, '「✘」 *Ocurrió un error al enviar el menú*', m, fake, )
+    conn.reply(m.chat, '「✘」 *حدث خطأ أثناء إرسال القائمة*', m, fake, )
     throw e
   }
 }
 handler.help = ['menu']
 handler.tags = ['main']
 handler.command = ['menu', 'مهام', 'اوامر', 'الاوامر', 'قائمة', 'القائمة'];
-handler.register = true
+handler.register = false
 
 export default handler
 

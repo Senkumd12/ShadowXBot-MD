@@ -281,16 +281,19 @@ continue
 }
 m.plugin = name
 if (m.chat in global.db.data.chats || m.sender in global.db.data.users) {
-let chat = global.db.data.chats[m.chat]
-let user = global.db.data.users[m.sender]
-if (!['owner-unbanchat.js'].includes(name) && chat && chat.isBanned && !isROwner) return // Except this
-if (name != 'owner-unbanchat.js' && name != 'owner-exec.js' && name != 'owner-exec2.js' && name != 'tool-delete.js' && chat?.isBanned && !isROwner) return 
-if (m.text && user.banned && !isROwner) {
-if (user.antispam > 2) return
-m.reply(`🚫 Está baneado(a), no puede usar los comandos de este bot!\n\n${user.bannedReason ? `\n💌 *Motivo:* 
-${user.bannedReason}` : '💌 *Motivo:* Sin Especificar'}\n\n⚠️ *Si este bot es cuenta oficial y tiene evidencia que respalde que este mensaje es un error, puede exponer su caso en:*\n\n🤍 ${asistencia}`)
-user.antispam++        
-return
+    let chat = global.db.data.chats[m.chat]
+    let user = global.db.data.users[m.sender]
+    
+    // لو الدردشة متقفلة أو المستخدم محظور و مش مالك البوت
+    if (!['owner-unbanchat.js'].includes(name) && chat && chat.isBanned && !isROwner) return
+    if (name != 'owner-unbanchat.js' && name != 'owner-exec.js' && name != 'owner-exec2.js' && name != 'tool-delete.js' && chat?.isBanned && !isROwner) return
+    
+    if (m.text && user.banned && !isROwner) {
+        if (user.antispam > 2) return // لو زودتها زيادة عن اللزوم، يقفلك تماما
+        m.reply(`🚫 انت محظور يا نجم، مش مسموحلك تستخدم أوامر البوت!\n\n${user.bannedReason ? `\n💌 *السبب:* 
+${user.bannedReason}` : '💌 *السبب:* مش محدد 😕'}\n\n⚠️ *لو شايف إن ده غلط، والبوت رسمي ومعاك دليل، ممكن تبعت حالتك هنا:*\n\n🤍 ${asistencia}`)
+        user.antispam++ // عشان لو عمل سبام نبدأ نحسب عليه 
+        return
 }
 
 //Antispam 2                
@@ -359,8 +362,8 @@ m.reply('chirrido -_-')
 else
 m.exp += xp
 if (!isPrems && plugin.yenes && global.db.data.users[m.sender].yenes < plugin.yenes * 1) {
-conn.reply(m.chat, `Se agotaron tus *💴 Yenes*`, m, fake)
-continue
+    conn.reply(m.chat, `انتهت *💴 العملات* الخاصة بك`, m, fake)
+    continue
 }
 let extra = {
 match,
@@ -406,7 +409,7 @@ await plugin.after.call(this, m, extra)
 console.error(e)
 }}
 if (m.yenes)
-conn.reply(m.chat, `Utilizaste *${+m.yenes}* 💴`, m, fake)
+    conn.reply(m.chat, `استخدمت *${+m.yenes}* 💴`, m, fake)
 }
 break
 }}
@@ -484,13 +487,13 @@ let chat = global.db.data.chats[msg?.chat] || {}
 if (!chat?.delete) return 
 if (!msg) return 
 if (!msg?.isGroup) return 
-const antideleteMessage = `╭•┈•〘❌ 𝗔𝗡𝗧𝗜 𝗗𝗘𝗟𝗘𝗧𝗘 ❌〙•┈• ◊
-│❒ 𝗨𝗦𝗨𝗔𝗥𝗜𝗢:
+const antideleteMessage = `╭•┈•〘❌ منع الحذف ❌〙•┈• ◊
+│❒ المستخدم:
 │• @${participant.split`@`[0]}
 │
-│❒ 𝗔𝗰𝗮𝗯𝗮 𝗱𝗲 𝗲𝗹𝗶𝗺𝗶𝗻𝗮𝗿 𝘂𝗻 𝗺𝗲𝗻𝘀𝗮𝗷𝗲
-│𝗿𝗲𝗲𝗻𝘃𝗶𝗮𝗻𝗱𝗼... ⏱️
-╰•┈•〘❌ 𝗔𝗡𝗧𝗜 𝗗𝗘𝗟𝗘𝗧𝗘 ❌〙•┈• ◊`.trim();
+││❒ تم رصد رسالة محذوفة
+│جاري إعادة إرسالها... ⏱️
+╰•┈•〘❌ منع الحذف ❌〙•┈• ◊`.trim();
 await this.sendMessage(msg.chat, {text: antideleteMessage, mentions: [participant]}, {quoted: msg})
 this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
 } catch (e) {
@@ -498,17 +501,17 @@ console.error(e)
 }}
 
 global.dfail = (type, m, conn) => {
-const msg = {
-rowner: '「🌸」 *Esta función solo puede ser usada por mi creador*\n\n> ianalejandrook15x.', 
-owner: '「🌸」 *Esta función solo puede ser usada por mi desarrollador.', 
-mods: '「🌸」 *Esta función solo puede ser usada por mis desarrolladores.*', 
-premium: '「🌸」 *Esta función solo es para usuarios Premium.', 
-group: '「🌸」 *Esta funcion solo puede ser ejecutada en grupos.*', 
-private: '「🌸」 *Esta función solo puede ser usada en chat privado.*', 
-admin: '「🌸」 *Este comando solo puede ser usado por admins.*', 
-botAdmin: '「🌸」 *Para usar esta función debo ser admin.*', 
-unreg: '「🌸」 *¡Hey! no estas registrado, registrese para usar esta función*\n\n*/reg nombre.edad*\n\n*Ejemplo* : */reg Akari.14*',
-restrict: '「🌸」 *Esta característica esta desactivada.*'
+const msg = {rowner: '「🌸」 *الميزة دي تنفع بس لصاحب البوت.*\n\n> Eslam Es.', 
+    owner: '「🌸」 *الميزة دي تنفع بس للمطور.*', 
+    mods: '「🌸」 *الميزة دي متاحة للمطورين بس.*', 
+    premium: '「🌸」 *الميزة دي مخصصة لمستخدمين البريميوم.*', 
+    group: '「🌸」 *الميزة دي تشتغل في الجروبات بس.*', 
+    private: '「🌸」 *الميزة دي تشتغل بس في الشات الخاص.*', 
+    admin: '「🌸」 *الأمر ده ينفع يتعمل بس من الأدمن.*', 
+    botAdmin: '「🌸」 *عشان تستخدم الميزة دي لازم أكون أدمن.*', 
+    unreg: '「🌸」 *استنى! انت مش مسجل، سجل عشان تستفيد من الميزة دي.*\n\n*.سجل الاسم.السن*\n\n*مثال*: *.سجل اسلام.17*', 
+    restrict: '「🌸」 *الميزة دي متقفلة حاليًا.*'
+    
 }[type];
 if (msg) return conn.reply(m.chat, msg, m, rcanal).then(_ => m.react('✖️'))}
 

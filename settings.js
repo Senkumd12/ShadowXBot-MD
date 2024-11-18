@@ -18,7 +18,7 @@ global.confirmCode = ''
 
 global.owner = [
    ['201556653112', 'المطور 👑', true],
-   ['573012482597']
+   ['201556878168']
 ]
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
@@ -43,10 +43,10 @@ global.jadi = 'Shadow_X_Bot'
 
 global.packname = 'Aƙαɾι Bσƚ - MD'
 global.botname = '𝓢𝓱𝓪𝓭𝓸𝔀 𝓧 - MD 🌸'
-global.wm = 'AƙαɾιBσƚ-MD 🌸'
-global.author = 'By ianalejandrook15x'
-global.dev = 'Pσɯҽɾҽԃ Bყ Tҽαɱ Sԋιɳιɳɠ'
-global.textbot = 'Aƙαɾι : ιαɳαʅҽʝαɳԃɾσσƙ15x 🌸'
+global.wm = '𝓢𝓱𝓪𝓭𝓸𝔀 𝓧-MD 🌸'
+global.author = 'By Eslam Elshnawy'
+global.dev = 'Pσɯҽɾҽԃ Bყ Tҽαɱ XOS'
+global.textbot = 'Shadow X : Eslam Elshnawy 🌸'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
@@ -61,22 +61,27 @@ global.avatar = fs.readFileSync('./src/img/avatar_contact.jpg')
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.grupo = 'https://chat.whatsapp.com/KiJY7gZS17aLcP6qaGatFX'
-global.grupo2 = 'https://chat.whatsapp.com/JJGQs5aCsTsAsHbw752fBv'
-global.grupo3 = 'https://chat.whatsapp.com/G2bAsa8E11mLLitGxI0iUQ'
-global.channel = 'https://whatsapp.com/channel/0029VajkZ6bIXnlwPZmbuH1u'
-global.md = 'https://github.com/ianalejandrook15x/AkariBot-MD' 
-global.yt = 'https://www.youtube.com/@ianalejandrook14x'
-global.tiktok = 'https://tiktok.com/@ian.ian271'
-global.correo = 'alejandroxddd92@gmail.com'
+global.grupo = 'https://chat.whatsapp.com/ExZaeZWaHgK7QPs6JZfgYj' // لو عندك لينك ضيفه
+global.grupo2 = 'https://chat.whatsapp.com/GfeUIl6taKTIgiQn1pjkQl' // لو عندك لينك ضيفه
+global.grupo3 = 'hhttps://chat.whatsapp.com/H5eWckGDaABARCLB7gaQpP' // لو عندك لينك ضيفه
+global.channel = 'https://whatsapp.com/channel/0029VasoQ3rEFeXn7Ij6oG37' // لو عندك لينك ضيفه
+global.md = 'https://github.com/ESLAMee2288/ShadowXBot-MD' // لو عندك لينك ضيفه
+global.yt = 'https://github.com/ESLAMee2288/ShadowXBot-MD' // لو عندك لينك ضيفه
+global.tiktok = 'https://github.com/ESLAMee2288/ShadowXBot-MD' // لو عندك لينك ضيفه
+global.correo = 'alshnawyaslam04@gmail.com' // لو عندك لينك ضيفه
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "543876577197-120363317332020195@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: 'Bσƚ ԃҽ WԋαƚʂAρρ', orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
+global.estilo = { 
+  key: {
+      fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "120363317332020195@g.us" } : {}) },
+       message: {
+         orderMessage: {
+           itemCount : -999999, status: 1, surface : 1, message: 'Şhค໓໐ຟ x ๖໐t', orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.esti = { key: {participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"videoMessage": { "title": `Aƙαɾι WαƚαɳαႦҽ`, "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': `Bσƚ ԃҽ WԋαƚʂAρρ`, 'jpegThumbnail': catalogo }}}
+global.esti = { key: {participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "369852147741258@g.us" } : {})},message: {"videoMessage": { "title": `Şhค໓໐ຟ x ๖໐t`, "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': `XOS`, 'jpegThumbnail': catalogo }}}
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 

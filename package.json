@@ -18,17 +18,6 @@
 "eslint": "eslint .",
 "eslintfix": "eslint --fix ."
 },
-"homepage": "https://github.com/ESLAMee2288/ShadowXBot-MD",
-"author": {
-"name": "ESLAMee2288"
-},
-"repository": {
-"type": "git",
-"url": "git+https://github.com/ESLAMee2288/ShadowXBot-MD.git"
-},
-"bugs": {
-"url": "https://github.com/ESLAMee2288/ShadowXBot-MD/issues"
-},
 "license": "GPL-3.0-or-later",
 "dependencies": {
 "@whiskeysockets/baileys": "github:WhiskeySockets/Baileys",
