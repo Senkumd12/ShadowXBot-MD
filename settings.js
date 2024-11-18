@@ -17,7 +17,7 @@ global.confirmCode = ''
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.owner = [
-   ['201556653112', 'المطور 👑', true],
+   ['212625457341', 'المطور 👑', true],
    ['201556878168']
 ]
 
@@ -34,7 +34,7 @@ global.libreria = 'Baileys'
 global.baileys = 'V 6.7.9'
 global.vs = '1.0.1'
 global.languaje = 'ar'
-global.nameqr = 'Shadow X Bot - MD'
+global.nameqr = 'senkuBot - MD'
 global.namebot = '𝓢𝓱𝓪𝓭𝓸𝔀 𝓧-MD'
 global.sessions = 'Shadow_X_Session'
 global.jadi = 'Shadow_X_Bot'
